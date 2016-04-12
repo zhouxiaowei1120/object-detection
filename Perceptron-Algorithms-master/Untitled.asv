@@ -1,0 +1,5 @@
+[dataAug]= preProcess (train_data,train_lab,0);
+[a]=singleSamplePerceptron (dataAug,6,0.9);
+% a= multiclass(train_data, train_lab, @singleSamplePerceptron,6,0.9);
+% outputlabel=findLabel_multiclass(test_data,a );
+[label_calculate]=findLabel_singleClass(test_data,0,a);

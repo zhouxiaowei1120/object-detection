@@ -1,0 +1,10 @@
+% [dataAug]= preProcess (train_data,train_lab,0);
+% [a]=singleSamplePerceptron (dataAug,6,0.9);
+% a= multiclass(train_data, train_lab, @singleSamplePerceptron,6,0.9);
+% outputlabel=findLabel_multiclass(test_data,a );
+function [label.] = Recognize()
+load huaweionline
+load devide
+tic;
+[label_calculate]=findLabel_singleClass(test_data(1:1,:),0,a);
+toc;
